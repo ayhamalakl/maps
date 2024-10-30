@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- بداية الهيدر -->
+    <header>
+        <nav>
+            <div class="logo">logo</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- نهاية الهيدر -->
+
+    <!-- بداية البودي -->
+    <section id="home" class="hero">
+        <div class="avatar">
+            <img src="image/imageyoung.png" alt="Avatar">
+        </div>
+        <h1> I do code and make content <span>about it!</span></h1>
+        <p> I am a seasoned full-stack software engineer with over 8 years <br> of professional experience, specializing
+            in backend development. My expertise lies <br> in crafting robust and scalable SaaS-based architectures on
+            the
+            Amazon AWS platform.</p>
+        <br>
+        <div class="buttons">
+            <button class="button1">Get In Touch</button>
+            <button class="button2">Download CV</button>
+        </div>
+        <h1 class="h11">EXPERIENCE WITH</h1>
+        <div class="experience-with">
+            <img src="icon/javascript.svg" alt="Icon 1">
+            <img src="icon/nodejs.svg" alt="Icon 2">
+            <img src="icon/html.svg" alt="Icon 3">
+            <img src="icon/css.svg" alt="Icon 4">
+            <img src="icon/reactjs.svg" alt="Icon 5">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 id="hh">PROJECTS</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="image/project-thumbnail-1.png" alt="HTML Tutorial">
+                <div class="overlay">
+                    <h4>CLICK HERE TO VISIT</h4>
+                    <h3>HTML TUTORIAL</h3>
+                    <span class="arrow">➔</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/project-thumbnail-2.png" alt="CSS Tutorial">
+                <div class="overlay">
+                    <h4>CLICK HERE TO VISIT</h4>
+                    <h3>CSS TUTORIAL</h3>
+                    <span class="arrow">➔</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h2 id="h22">EXPERIENCE</h2>
+
+        <div class="experience-card">
+            <img src="icon/google-logo.svg" alt="Google Icon" class="company-icon">
+            <div class="experience-content">
+                <h3>Lead Software Engineer at Google</h3>
+                <p class="date">Nov 2019 - Present</p>
+                <p>As a Senior Software Engineer at Google, I played a pivotal role in developing <br> innovative
+                    solutions
+                    for Google's core search algorithms...</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <img src="icon/apple-logo.svg" alt="Apple Icon" class="company-icon">
+            <div class="experience-content">
+                <h3>Junior Software Engineer at Apple</h3>
+                <p class="date">Jan 2016 - Dec 2017</p>
+                <p>During my tenure at Apple, I held the role of Software Architect, <br> where I played a key role in
+                    shaping the architecture of mission-critical software projects...</p>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <img src="icon/meta-logo.svg" alt="Meta Icon" class="company-icon">
+            <div class="experience-content">
+                <h3>Software Engineer at Meta</h3>
+                <p class="date">Jan 2017 - Oct 2019</p>
+                <p>At Meta, I served as a Software Engineer, focusing on the design and implementation <br>of backend
+                    systems for the social media giant's dynamic platform...</p>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <!-- بداية الفوتر -->
+    <footer id="contact">
+        <h2 class="footer-title">CONTACT</h2>
+        <p class="paragraph">Seasoned full stack software engineer with over 8 years of hands-on <br> experience in
+            designing and
+            implementing
+            robust scalable and innovative web solutions adept at <br> leveraging a comprehensive skill set encompassing
+            front-end and back-end technologies.</p>
+        <div class="contact-info">
+            <img src="icon/Email Icon.svg" alt="Card Icon">
+            <span>Email: ayhamalakla@gmail.com</span>
+        </div>
+        <div class="social-icons">
+            <img src="icon/instagram.svg" alt="Instgram Icon">
+            <img src="icon/x.svg" alt="X Icon">
+            <img src="icon/mdi_linkedin.svg" alt="LinkedIn Icon">
+            <img src="icon/mdi_github.svg" alt="GitHub Icon">
+        </div>
+    </footer>
+    <!-- نهاية الفوتر -->
+
+    <script src="script.js"></script>
+</body>
+<!-- نهاية البودي -->
+
+</html>

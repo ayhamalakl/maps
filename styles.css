@@ -1,0 +1,361 @@
+/* بداية التهيئة العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* نهاية التهيئة العامة */
+
+
+/* بداية تنسيق الجسم الأساسي للصفحة */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* نهاية تنسيق الجسم الأساسي للصفحة */
+
+
+/* بداية تنسيق الهيدر */
+header {
+    background-color: #1c1c1c;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-shadow:
+        0 0 20px #ff9900,
+        0 0 30px #ff6600,
+        0 0 40px #ff3300,
+        0 0 50px #ff0000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 20px;
+    color: white;
+    text-shadow:
+        0 0 20px #ff9900,
+        0 0 30px #ff6600,
+        0 0 40px #ff3300,
+        0 0 50px #ff0000;
+}
+
+/* نهاية تنسيق الهيدر */
+
+
+/* بداية تنسيق قسم البطل (hero) */
+.hero {
+    padding: 50px 20px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 150px;
+    background: linear-gradient(115.69deg, #FF8660 71.79%, #9A33FF 95.51%);
+}
+
+.h11 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #1c1c1c;
+    text-shadow:
+        0 0 20px #c0c0c0,
+        0 0 30px #a9a9a9,
+        0 0 40px #808080,
+        0 0 50px #696969;
+}
+
+h1 span {
+    background: linear-gradient(115.69deg, #FF8660 71.79%, #9A33FF 95.51%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button1 {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    background: none;
+    color: black;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.button2 {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    background: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.experience-with {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+/* نهاية تنسيق قسم البطل (hero) */
+
+
+/* بداية تنسيق قسم المشاريع */
+#hh {
+    color: black;
+    text-shadow:
+        0 0 20px #ff9900,
+        0 0 30px #ff6600,
+        0 0 40px #ff3300,
+        0 0 50px #ff0000;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #FF8660;
+}
+
+/* نهاية تنسيق قسم المشاريع */
+
+
+/* بداية تنسيق قسم الخبرات */
+#h22 {
+    color: white;
+    text-shadow:
+        0 0 20px #0099ff,
+        0 0 30px #0066ff,
+        0 0 40px #0033ff,
+        0 0 50px #0000ff;
+}
+
+#experience {
+    padding: 50px 20px;
+}
+
+.experience-card {
+    display: flex;
+    align-items: center;
+    background-color: #1c1c1c;
+    margin: 20px 20px 20px 20px;
+    margin-left: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 1000px;
+}
+
+.company-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.experience-content h3 {
+    color: #2196f3;
+    margin: 0;
+}
+
+.date {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+.experience-content p {
+    margin: 5px 0;
+    color: #aaaaaa;
+}
+
+/* نهاية تنسيق قسم الخبرات */
+
+
+/* بداية تنسيق النافذة المنبثقة (Modal) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* نهاية تنسيق النافذة المنبثقة (Modal) */
+
+
+/* بداية تنسيق الفوتر */
+.footer-title {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: start;
+}
+
+.paragraph {
+    text-align: start;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 10px 0;
+}
+
+.contact-info img {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #1c1c1c;
+    padding-left: 100px;
+}
+
+/* نهاية تنسيق الفوتر */
+
+
+/* بداية الميديا كويري لتنسيق الشاشة على الأجهزة المختلفة */
+
+/* ميديا كويري للتابلت */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px;
+    }
+
+    .experience-card {
+        margin-left: 100px;
+        width: 80%;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+}
+
+/* نهاية ميديا كويري التابلت */
+
+/* ميديا كويري للهاتف */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .experience-card {
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .hero {
+        padding: 20px 5px;
+    }
+
+    .avatar img {
+        width: 100px;
+    }
+}
+
+/* نهاية ميديا كويري الهاتف */
+
+/* نهاية الميديا كويري لتنسيق الشاشة على الأجهزة المختلفة */
